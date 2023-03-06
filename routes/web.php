@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('master');
 });
+
+Route::get('/mahasiswa', function(){
+    return view('aldin.profile');
+})->name('aldin');
