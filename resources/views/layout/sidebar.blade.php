@@ -44,20 +44,6 @@
                 <span class="badge badge-info right">2</span>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{Route('aldin')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aldin Ariel Pramudya</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/top-nav-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Kholid Mauludi</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item">
             <a href="../gallery.html" class="nav-link">
