@@ -30,14 +30,13 @@
               @yield('aldinprofile')
               @yield('kholidprofile')
                 <div class="row mb-2">
-                  <div class="col-sm-6">
-                  </div>
                 </div>
             </div><!-- /.container-fluid -->
           </section>
         </div>
+        </div>
         @include('layout.footer')
-  </div> 
+    </div> 
     <!-- jQuery -->
         <script src="../../plugins/jquery/jquery.min.js"></script>
         <!-- Bootstrap 4 -->
