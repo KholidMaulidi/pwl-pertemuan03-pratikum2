@@ -16,7 +16,6 @@
     <div class="wrapper">
         @include('layout.navbar')
         @include('layout.sidebar')
-       
         <div class="content-wrapper">
           <section class="content">
             <div class="container-fluid">

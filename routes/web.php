@@ -26,14 +26,6 @@ Route::get('/', function () {
 
 Route::get('/pengalaman-kuliah', [ContentController::class, 'content'])->name('content_kuliah');
 
-Route::get('/profile', [ContactController::class, 'profile'])->name('profile');
-
-Route::get('/mahasiswa1', function(){
-    return view('aldin.profile');
-})->name('aldin');
-
-Route::get('/mahasiswa2', function(){
-    return view('Kholid.profileKholid');
-})->name('Kholid');
+Route::get('/profile/{id?}', [ContactController::class, 'profile'])->name('profile');
 
 Route::get('/', [SelamatController::class, 'selamat'])->name('selamat');
