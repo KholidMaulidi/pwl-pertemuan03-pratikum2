@@ -13,34 +13,29 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
-    @include('layout.sidebar')
-    <div class="wrapper">  
+    <div class="wrapper">
         @include('layout.navbar')
-    </div>
-    <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            @yield('aldinprofile')
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
-            </ol>
-          </div>
+        @include('layout.sidebar')
+        <div class="content-wrapper">
+          <section class="content">
+            <div class="container-fluid">
+              @yield('pengalaman')
+            </div>
+          </section>
+            <!-- Content Header (Page header) -->
+          <section class="content-header">
+            <div class="container-fluid">
+              @yield('contact')
+              @yield('aldinprofile')
+                <div class="row mb-2">
+                  <div class="col-sm-6">
+                  </div>
+                </div>
+            </div><!-- /.container-fluid -->
+          </section>
         </div>
-      </div><!-- /.container-fluid -->
-    </section>
-
-
-
-
-
-
+        @include('layout.footer')
+  </div> 
     <!-- jQuery -->
         <script src="../../plugins/jquery/jquery.min.js"></script>
         <!-- Bootstrap 4 -->

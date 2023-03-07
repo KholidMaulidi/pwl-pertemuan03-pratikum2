@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContentController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +22,10 @@ Route::get('/tutor', function(){
 Route::get('/', function () {
     return view('master');
 });
+
+Route::get('/pengalaman-kuliah', [ContentController::class, 'content'])->name('content_kuliah');
+
+Route::get('/profile', [ContactController::class, 'profile'])->name('profile');
 
 Route::get('/mahasiswa', function(){
     return view('aldin.profile');
