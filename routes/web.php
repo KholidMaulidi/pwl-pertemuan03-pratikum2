@@ -34,3 +34,4 @@ Route::get('/mahasiswa', function(){
 Route::get('/mahasiswa', function(){
     return view('Kholid.profileKholid');
 })->name('Kholid');
+
