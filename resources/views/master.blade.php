@@ -13,10 +13,30 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
-    @include('layout.sidebar')
-    <div class="wrapper">  
+    <div class="wrapper">
         @include('layout.navbar')
-    </div>
+        @include('layout.sidebar')
+        <div class="content-wrapper">
+          <section class="content">
+            <div class="container-fluid">
+              @yield('pengalaman')
+            </div>
+          </section>
+            <!-- Content Header (Page header) -->
+          <section class="content-header">
+            <div class="container-fluid">
+              {{-- @yield('contact') --}}
+              @yield('aldinprofile')
+              @yield('')
+                <div class="row mb-2">
+                  <div class="col-sm-6">
+                  </div>
+                </div>
+            </div><!-- /.container-fluid -->
+          </section>
+        </div>
+        @include('layout.footer')
+  </div> 
     <!-- jQuery -->
         <script src="../../plugins/jquery/jquery.min.js"></script>
         <!-- Bootstrap 4 -->
@@ -26,5 +46,4 @@
         <!-- AdminLTE for demo purposes -->
         <script src="../../dist/js/demo.js"></script>
 </body>
-
 
