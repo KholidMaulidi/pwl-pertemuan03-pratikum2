@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SelamatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,12 @@ Route::get('/pengalaman-kuliah', [ContentController::class, 'content'])->name('c
 
 Route::get('/profile', [ContactController::class, 'profile'])->name('profile');
 
-Route::get('/mahasiswa', function(){
+Route::get('/mahasiswa1', function(){
     return view('aldin.profile');
 })->name('aldin');
+
+Route::get('/mahasiswa2', function(){
+    return view('Kholid.profileKholid');
+})->name('Kholid');
+
+Route::get('/', [SelamatController::class, 'selamat'])->name('selamat');

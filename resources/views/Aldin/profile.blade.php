@@ -66,5 +66,4 @@
             setiap permainan yang saya miliki, karena gacha sempurna adalah sebuah mitos bualan semata
         </div>
     </div>
-    
 @endsection

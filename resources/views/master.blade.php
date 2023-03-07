@@ -16,6 +16,7 @@
     <div class="wrapper">
         @include('layout.navbar')
         @include('layout.sidebar')
+       
         <div class="content-wrapper">
           <section class="content">
             <div class="container-fluid">
@@ -26,7 +27,9 @@
           <section class="content-header">
             <div class="container-fluid">
               @yield('contact')
+              @yield('selamat')
               @yield('aldinprofile')
+              @yield('kholidprofile')
                 <div class="row mb-2">
                   <div class="col-sm-6">
                   </div>
@@ -45,5 +48,4 @@
         <!-- AdminLTE for demo purposes -->
         <script src="../../dist/js/demo.js"></script>
 </body>
-
 
